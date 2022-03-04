@@ -47,8 +47,8 @@
 
     - pipeline_repo_dir_name: repo
     - repos:
-      - url: https://github.com/edx/edx-analytics-pipeline.git
-        branch: master
+      - url: https://github.com/WHOAcademy/edx-analytics-pipeline.git
+        branch: open-release/koa.master
         dir_name: "{{ pipeline_repo_dir_name }}"
     - working_repo_dir: "{{ working_dir }}/{{ pipeline_repo_dir_name }}"
 
@@ -126,12 +126,12 @@
       sudo: True
 
     - name: bootstrap pip on Debian
-      command: apt-get install -q -y python-pip
+      command: apt-get install -q -y python3-pip
       sudo: True
       when: ansible_distribution in common_debian_variants
 
     - name: bootstrap pip on RHEL
-      command: yum install -q -y python-pip
+      command: yum install -q -y python3-pip
       sudo: True
       when: ansible_distribution in common_redhat_variants
 

@@ -175,8 +175,8 @@ def convert_args_to_extra_vars(arguments, uid):
     }
     repos = {
         'pipeline': {
-            'url': 'https://github.com/edx/edx-analytics-pipeline.git',
-            'branch': 'origin/master',
+            'url': 'https://github.com/WHOAcademy/edx-analytics-pipeline.git',
+            'branch': 'open-release/koa.master',
             'dir_name': REMOTE_CODE_DIR_BASE
         }
     }

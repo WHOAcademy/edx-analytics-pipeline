@@ -47,8 +47,8 @@
 
     - pipeline_repo_dir_name: repo
     - repos:
-      - url: https://github.com/edx/edx-analytics-pipeline.git
-        branch: master
+      - url: https://github.com/WHOAcademy/edx-analytics-pipeline.git
+        branch: open-release/koa.master
         dir_name: "{{ pipeline_repo_dir_name }}"
     - working_repo_dir: "{{ working_dir }}/{{ pipeline_repo_dir_name }}"
 
